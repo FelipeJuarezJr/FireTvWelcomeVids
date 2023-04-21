@@ -145,11 +145,13 @@ class MainFragment : BrowseSupportFragment() {
                         DetailsActivity.SHARED_ELEMENT_NAME)
                         .toBundle()
                 startActivity(intent, bundle)
-            } else if (item is String) {
+            }
+            else if (item is String) {
                 if (item.contains(getString(R.string.error_fragment))) {
                     val intent = Intent(activity!!, BrowseErrorActivity::class.java)
                     startActivity(intent)
-                } else {
+                }
+                else {
                     Toast.makeText(activity!!, item, Toast.LENGTH_SHORT).show()
                 }
             }
