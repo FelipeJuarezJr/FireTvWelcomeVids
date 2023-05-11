@@ -3,11 +3,11 @@ package com.example.firetvwelcomevids
 object MovieList {
     val MOVIE_CATEGORY = arrayOf(
             "H1",
-            "H2",
-            "H3",
-            "H4",
-            "Other Homes",
-            "Other Homes")
+            "",
+            "",
+            "",
+            "",
+            "")
 
     val list: List<Movie> by lazy {
         setupMovies()
