@@ -6,8 +6,8 @@ object MovieList {
             "H2",
             "H3",
             "H4",
-            "Category Four",
-            "Category Five")
+            "Other Homes",
+            "Other Homes")
 
     val list: List<Movie> by lazy {
         setupMovies()
@@ -16,31 +16,34 @@ object MovieList {
 
     private fun setupMovies(): List<Movie> {
         val title = arrayOf(
-                "Zeitgeist 2010_ Year in Review",
-                "Google Demo Slam_ 20ft Search",
-                "Introducing Gmail Blue",
-                "Introducing Google Fiber to the Pole",
-                "Introducing Google Nose")
+                "Entrance Keypad",
+                "Gas Grill",
+                "Charcoal Grill",
+                "Pool Opening",
+                "Kitchen Stove")
 
-        val description = "Fusce id nisi turpis. Praesent viverra bibendum semper. " +
-                "Donec tristique, orci sed semper lacinia, quam erat rhoncus massa, non congue tellus est " +
-                "quis tellus. Sed mollis orci venenatis quam scelerisque accumsan. Curabitur a massa sit " +
-                "amet mi accumsan mollis sed et magna. Vivamus sed aliquam risus. Nulla eget dolor in elit " +
-                "facilisis mattis. Ut aliquet luctus lacus. Phasellus nec commodo erat. Praesent tempus id " +
-                "lectus ac scelerisque. Maecenas pretium cursus lectus id volutpat."
+            val description = "Here are some simple Instructions on HOW TO..."
+
+//      THE BELOW IS THE ORIGINAL DESCRIPTION THAT IS APPLIED TO ALL VIDEOS
+//        val description = "Instructions on how to use the KeyPad " +
+//                "Donec tristique, orci sed semper lacinia, quam erat rhoncus massa, non congue tellus est " +
+//                "quis tellus. Sed mollis orci venenatis quam scelerisque accumsan. Curabitur a massa sit " +
+//                "amet mi accumsan mollis sed et magna. Vivamus sed aliquam risus. Nulla eget dolor in elit " +
+//                "facilisis mattis. Ut aliquet luctus lacus. Phasellus nec commodo erat. Praesent tempus id " +
+//                "lectus ac scelerisque. Maecenas pretium cursus lectus id volutpat."
 
 
         val studio = arrayOf(
-                "Studio Zero",
-                "Studio One",
-                "Studio Two",
-                "Studio Three",
-                "Studio Four")
+                "Piru Studios",
+                "Piru Studios",
+                "Piru Studios",
+                "Piru Studios",
+                "Piru Studios")
 
 
         val videoUrl = arrayOf(
-                "https://commondatastorage.googleapis.com/android-tv/Sample%20videos/Zeitgeist/Zeitgeist%202010_%20Year%20in%20Review.mp4",
-                "https://commondatastorage.googleapis.com/android-tv/Sample%20videos/Demo%20Slam/Google%20Demo%20Slam_%2020ft%20Search.mp4",
+                "https://piruproperties.com/android/vids/quicksetTutorial.mp4",
+                "https://piruproperties.com/android/vids/gasGrill.mp4",
                 "https://commondatastorage.googleapis.com/android-tv/Sample%20videos/April%20Fool's%202013/Introducing%20Gmail%20Blue.mp4",
                 "https://commondatastorage.googleapis.com/android-tv/Sample%20videos/April%20Fool's%202013/Introducing%20Google%20Fiber%20to%20the%20Pole.mp4",
                 "https://commondatastorage.googleapis.com/android-tv/Sample%20videos/April%20Fool's%202013/Introducing%20Google%20Nose.mp4")
@@ -57,11 +60,11 @@ object MovieList {
 
 
         val cardImageUrl = arrayOf(
-                "https://commondatastorage.googleapis.com/android-tv/Sample%20videos/Zeitgeist/Zeitgeist%202010_%20Year%20in%20Review/card.jpg",
-                "https://commondatastorage.googleapis.com/android-tv/Sample%20videos/Demo%20Slam/Google%20Demo%20Slam_%2020ft%20Search/card.jpg",
-                "https://commondatastorage.googleapis.com/android-tv/Sample%20videos/April%20Fool's%202013/Introducing%20Gmail%20Blue/card.jpg",
-                "https://commondatastorage.googleapis.com/android-tv/Sample%20videos/April%20Fool's%202013/Introducing%20Google%20Fiber%20to%20the%20Pole/card.jpg",
-                "https://commondatastorage.googleapis.com/android-tv/Sample%20videos/April%20Fool's%202013/Introducing%20Google%20Nose/card.jpg")
+                "https://piruproperties.com/android/images/quicksetDeadBolt.png",
+                "https://piruproperties.com/android/images/gasGrill.png",
+                "https://piruproperties.com/android/images/charcoalGrill.jpg",
+                "https://piruproperties.com/android/images/poolCover.jpeg",
+                "https://piruproperties.com/android/images/kitchenStove.jpeg")
 
         val list = title.indices.map {
             buildMovieInfo(
